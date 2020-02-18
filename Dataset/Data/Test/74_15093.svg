@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with matplotlib (https://matplotlib.org/) -->
+<svg height="23.04pt" version="1.1" viewBox="0 0 23.04 23.04" width="23.04pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+*{stroke-linecap:butt;stroke-linejoin:round;}
+  </style>
+ </defs>
+ <g id="figure_1">
+  <image height="23.04" id="imageacf17f172e" transform="scale(1 -1)translate(0 -23.04)" width="23.04" x="0" xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAPJJREFUWIXdl9kOxCAIRaGZ//9l5mVsXFiuRjQZHiteTimgZSISumjPzeDpACJxctMASvAIYgAQEYg8MmYeYFQ/+hWh5lSLrFqv22uqn2BHYFRryMDO4LVZmXi0xQyzXmy5C1aKVYO4NogK/HEAtQvKw6wC9Oz/zoLZ4mwA0I2InwXSP/tAESeMmZsgFmwziDIgUHsByiYkvUgAy4eZm7UhA5kHETQJT5wLJkDGIIouJmoRnsxCag0gmmYbellA+hzVcq9kOydjrRsCzIhHsOF+cn7N6s1aoNlMaRlwASLxXjCa++paBGAJ7+oWCCDTrt+IvmoChSMrp/eAAAAAAElFTkSuQmCC" y="-0"/>
+ </g>
+</svg>

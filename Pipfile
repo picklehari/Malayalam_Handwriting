@@ -10,6 +10,7 @@ numpy = "*"
 pandas = "*"
 pillow = "*"
 matplotlib = "*"
+sklearn = "*"
 
 [requires]
 python_version = "3.6"
