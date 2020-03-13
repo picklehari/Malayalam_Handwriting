@@ -12,6 +12,7 @@ pillow = "*"
 matplotlib = "*"
 sklearn = "*"
 opencv-python = "*"
+joblib = "*"
 
 [requires]
 python_version = "3.6"

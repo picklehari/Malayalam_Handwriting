@@ -142,5 +142,5 @@ dmypy.json
 .history
 
 ### Externally Added
-model
+model_file.joblib
 # End of https://www.gitignore.io/api/linux,python,opencv,visualstudiocode

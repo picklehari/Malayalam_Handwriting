@@ -2,7 +2,7 @@ import pandas
 from sklearn import svm
 from sklearn.metrics import confusion_matrix
 import numpy
-import pickle
+import joblib
 import matplotlib.pyplot as plt
 
 
@@ -18,21 +18,21 @@ x_test = test_data.drop([0],axis=1,inplace=False)
 classifier=svm.SVC(gamma='auto')
 classifier.fit(x_train,y_train)
 
-with open("model",'ab') as f:
-    pickle.dump(classifier,f) 
+joblib.dump(classifier,"model_file.joblib")
 
 s = classifier.predict(x_test)
-cm = confusion_matrix(s,y_test)
+cm = classifier.score(s,y_test)
 
-x = []
-y = []
-for i in range(85):
-    for j in range(85):
-        if cm[i][j] != 0:
-            x.append(i)
-            y.append(j)
+print(cm)
+# x = []
+# y = []
+# for i in range(85):
+#     for j in range(85):
+#         if (cm[i][j] != 0) and (i !=j):
+#             x.append(i)
+#             y.append(j)
 
-plt.scatter(x,y)
-plt.show()
+# plt.scatter(x,y)
+# plt.show()
 
-print(len(x)/len(y_test))
+# print(len(x)/len(y_test))
