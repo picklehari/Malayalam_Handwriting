@@ -21,7 +21,7 @@ classifier.fit(x_train,y_train)
 joblib.dump(classifier,"model_file.joblib")
 
 s = classifier.predict(x_test)
-cm = classifier.score(s,y_test)
+cm = classifier.confusion_matrix(s,y_test)
 
 print(cm)
 # x = []
