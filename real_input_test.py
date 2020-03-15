@@ -71,5 +71,13 @@ for x in alphabet:
 
 # for i in s:
 #     print(alphabets[i])
+
+xi = real_data_points.iloc[0]
+
+xi = numpy.array(xi).reshape(32,32)
+xi = list(xi)
+with open("Bleh" , "w+") as f:
+    f.write(str(xi))
+
 for i in s:
     print(alphabets[int(i)-1])

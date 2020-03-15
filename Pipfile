@@ -13,6 +13,8 @@ matplotlib = "*"
 sklearn = "*"
 opencv-python = "*"
 joblib = "*"
+keras = "*"
+tensorflow = "*"
 
 [requires]
 python_version = "3.6"

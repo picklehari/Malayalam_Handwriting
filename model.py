@@ -15,13 +15,13 @@ x_train = train_data.drop([0],axis=1,inplace=False)
 y_test = test_data[0]
 x_test = test_data.drop([0],axis=1,inplace=False)
 
-classifier=svm.SVC(gamma='auto')
+classifier=svm.SVC(gamma='scale')
 classifier.fit(x_train,y_train)
 
 joblib.dump(classifier,"model_file.joblib")
 
 s = classifier.predict(x_test)
-cm = classifier.confusion_matrix(s,y_test)
+cm = confusion_matrix(s,y_test)
 
 print(cm)
 # x = []
