@@ -74,7 +74,7 @@ for x in alphabet:
 
 xi = real_data_points.iloc[0]
 
-xi = numpy.array(xi).reshape(32,32)
+xi = numpy.array(xi).reshape(1024,1)
 xi = list(xi)
 with open("Bleh" , "w+") as f:
     f.write(str(xi))

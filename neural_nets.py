@@ -12,7 +12,9 @@ from keras.layers import MaxPooling2D,BatchNormalization
 from keras.layers import Dense
 from keras.layers import Flatten
 from keras.optimizers import SGD
+
 import pandas
+import joblib
 
 def load_dataset():
     train_data = pandas.read_csv("Dataset/handwritten/Handwritten_V2_train.csv",header=None)
@@ -33,9 +35,9 @@ def define_model():
 
     model = Sequential()
     model.add(Flatten())
-    model.add(Flatten())
-    model.add(Dense(None, activation='relu'))
-    model.add(Dense(85, activation='softmax'))
+
+    model.add(Dense(1024, activation='relu'))
+    model.add(Dense(86, activation='softmax'))
     opt = SGD(lr=0.01, momentum=0.9)
     model.compile(optimizer=opt, loss='categorical_crossentropy', metrics=['accuracy'])
     return model
@@ -94,3 +96,9 @@ def run_test_harness():
  
 # entry point, run the test harness
 run_test_harness()
+
+# trainX, trainY, testX, testY = load_dataset()
+# model = define_model()
+# classifier = model.fit(trainX,trainY)
+# #joblib.dump("model_file.joblib")
+# evaluate()
